@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FormsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,11 +200,16 @@
     <Compile Include="Migrations\201712150406411_AddFormsTable.Designer.cs">
       <DependentUpon>201712150406411_AddFormsTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712150425258_AddVideosTable.cs" />
+    <Compile Include="Migrations\201712150425258_AddVideosTable.Designer.cs">
+      <DependentUpon>201712150425258_AddVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Form.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -264,6 +270,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Forms\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,6 +291,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712150406411_AddFormsTable.resx">
       <DependentUpon>201712150406411_AddFormsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712150425258_AddVideosTable.resx">
+      <DependentUpon>201712150425258_AddVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
